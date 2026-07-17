@@ -22,17 +22,17 @@ export default function ForgotPassword() {
   };
 
   if (sent) return (
-    <AuthLayout title="Check your inbox" subtitle="We've sent a reset link to your email">
+    <Layout title="Check your inbox" subtitle="We've sent a reset link to your email">
       <div className="text-center space-y-4">
         <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto text-3xl">✉️</div>
         <p className="text-sm text-gray-500">Didn't receive it? Check your spam folder or <button onClick={() => setSent(false)} className="text-indigo-600 hover:underline">try again</button>.</p>
         <Link to="/login" className="block text-sm text-indigo-600 hover:underline">Back to login</Link>
       </div>
-    </AuthLayout>
+    </Layout>
   );
 
   return (
-    <AuthLayout title="Forgot password?" subtitle="Enter your email to receive a reset link">
+    <Layout title="Forgot password?" subtitle="Enter your email to receive a reset link">
       <form onSubmit={handleSubmit} className="space-y-5">
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1.5">Email</label>
@@ -51,6 +51,6 @@ export default function ForgotPassword() {
           <Link to="/login" className="text-indigo-600 hover:underline">Back to login</Link>
         </p>
       </form>
-    </AuthLayout>
+    </Layout>
   );
 }

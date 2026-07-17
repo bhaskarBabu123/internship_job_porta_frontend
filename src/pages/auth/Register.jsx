@@ -25,7 +25,7 @@ export default function Register() {
   };
 
   return (
-    <AuthLayout title="Create your account" subtitle="Join thousands of job seekers and employers">
+    <Layout title="Create your account" subtitle="Join thousands of job seekers and employers">
       <form onSubmit={handleSubmit} className="space-y-4">
         {/* Role Toggle */}
         <div className="flex bg-[#EEF2F6] rounded-lg p-1 gap-1">
@@ -93,6 +93,6 @@ export default function Register() {
           <Link to="/login" className="text-[#2C5AA0] font-medium hover:underline">Sign in</Link>
         </p>
       </form>
-    </AuthLayout>
+    </Layout>
   );
 }

@@ -35,7 +35,7 @@ export default function VerifyOtp() {
   };
 
   return (
-    <AuthLayout title="Verify your email" subtitle={`We sent a 6-digit code to ${email}`}>
+    <Layout title="Verify your email" subtitle={`We sent a 6-digit code to ${email}`}>
       <form onSubmit={handleVerify} className="space-y-5">
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1.5">OTP Code</label>
@@ -54,6 +54,6 @@ export default function VerifyOtp() {
           </button>
         </p>
       </form>
-    </AuthLayout>
+    </Layout>
   );
 }

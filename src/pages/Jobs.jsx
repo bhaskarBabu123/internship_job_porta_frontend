@@ -1,12 +1,12 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Search, Filter, X, ChevronLeft, ChevronRight, SlidersHorizontal } from 'lucide-react';
-import Layout from '../components/Layout.jsx';
 import JobCard from '../components/JobCard.jsx';
 import Spinner from '../components/Spinner.jsx';
 import { api } from '../lib/api.js';
 import { useAuth } from '../hooks/useAuth.jsx';
 import toast from 'react-hot-toast';
+import Layout from '../components/Layout.jsx';
 
 const JOB_TYPES = ['Full-time', 'Part-time', 'Internship', 'Contract', 'Freelance'];
 const WORK_MODES = ['Remote', 'On-site', 'Hybrid'];

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Rocket } from 'lucide-react';
 
-export function AuthLayout({ title, subtitle, children }) {
+export function Layout({ title, subtitle, children }) {
   return (
     <div className="min-h-screen flex font-[IBM_Plex_Sans]">
       <style>{`
@@ -11,7 +11,7 @@ export function AuthLayout({ title, subtitle, children }) {
       {/* Branded panel */}
       <div className="hidden lg:flex lg:w-[45%] relative overflow-hidden">
         <img src="https://images.huffingtonpost.com/2015-02-05-shutterstock_4855602111024x675.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0F1B2D]/90 via-[#0F1B2D]/80 to-[#0F1B2D]/95" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0F1B2D]/90 via-[#0F1B2D]/80 to-[#0F1B2D]/95" />s
 
         <div className="relative flex flex-col justify-between p-12 text-white w-full">
           <Link to="/" className="flex items-center gap-2 w-fit">
