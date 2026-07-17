@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Rocket } from 'lucide-react';
 
-export function AuthLayout({ title, subtitle, children }) {
+export function Layout({ title, subtitle, children }) {
   return (
     <div className="min-h-screen flex font-[IBM_Plex_Sans]">
       <style>{`
