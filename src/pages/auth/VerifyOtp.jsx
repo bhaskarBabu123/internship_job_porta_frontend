@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { AuthLayout } from '../../components/Layout.jsx';
+import Layout from '../../components/Layout.jsx';
 import { api } from '../../lib/api.js';
 import { setAuth } from '../../lib/auth.js';
 import toast from 'react-hot-toast';

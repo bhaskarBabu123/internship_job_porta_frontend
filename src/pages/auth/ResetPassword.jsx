@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { Lock, Eye, EyeOff } from 'lucide-react';
-import { AuthLayout } from '../../components/Layout.jsx';
+import Layout from '../../components/Layout.jsx';
 import { api } from '../../lib/api.js';
 import toast from 'react-hot-toast';
 

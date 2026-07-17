@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Mail } from 'lucide-react';
-import { AuthLayout } from '../../components/Layout.jsx';
+import Layout from '../../components/Layout.jsx';
 import { api } from '../../lib/api.js';
 import toast from 'react-hot-toast';
 

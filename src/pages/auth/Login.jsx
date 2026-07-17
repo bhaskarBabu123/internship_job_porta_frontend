@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Eye, EyeOff, Mail, Lock } from 'lucide-react';
 import { useAuth } from '../../hooks/useAuth.jsx';
-import { Layout } from '../../components/Layout.jsx';
+import Layout from '../../components/Layout.jsx';
 import toast from 'react-hot-toast';
 
 export default function Login() {
@@ -25,7 +25,7 @@ export default function Login() {
   };
 
   return (
-    <Layout title="Welcome back" subtitle="Sign in to your account">
+    <AuthLayout title="Welcome back" subtitle="Sign in to your account">
       <form onSubmit={handleSubmit} className="space-y-5">
         <div>
           <label className="block text-sm font-medium text-[#0F1B2D]/80 mb-1.5">Email</label>
@@ -60,6 +60,6 @@ export default function Login() {
           <Link to="/register" className="text-[#2C5AA0] font-medium hover:underline">Sign up free</Link>
         </p>
       </form>
-    </Layout>
+    </AuthLayout>
   );
 }
